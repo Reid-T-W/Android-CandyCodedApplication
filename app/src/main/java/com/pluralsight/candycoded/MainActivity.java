@@ -85,8 +85,8 @@ public class MainActivity extends AppCompatActivity {
   // TODO - Task 1 - Show Store Information Activity
 
   @Override
-  public boolean onOptionsItemSelected(@NonNull @org.jetbrains.annotations.NotNull MenuItem item) {
-    Intent infoIntent = new InfoIntent(this,InfoActivity.class);
+  public boolean onOptionsItemSelected(MenuItem item) {
+    Intent infoIntent = new Intent(this,InfoActivity.class);
     startActivity(infoIntent);
     return super.onOptionsItemSelected(item);
   }
